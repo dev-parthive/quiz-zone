@@ -11,7 +11,7 @@ const Quiz = ({quiz}) => {
             <div className='flex justify-between items-center w-11/12 mx-auto mt-2'>
                 <p>{total} Questions</p>
                  <button className='btn btn-accent btn-outline'>
-                    <Link>Start quiz</Link>
+                    <Link to={`/${id}`}>Start quiz</Link>
                  </button>
                 </div>
         </div>
