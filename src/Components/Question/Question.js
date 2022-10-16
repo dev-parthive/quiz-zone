@@ -47,7 +47,7 @@ const Question = ({ questions }) => {
             <div className="quiz-heading">
                 <div className='flex items-center justify-around'>
                     <h2>Quiz: {question}  </h2>
-                    <p><span className='icon-fav' onClick={() => iconsClicked()}> <EyeIcon className="h-6 w-6 text-blue-500" /></span></p>
+                    <p style={{cursor: 'pointer'}}><span className='icon-fav' onClick={() => iconsClicked()}> <EyeIcon className="h-6 w-6 text-blue-500" /></span></p>
                 </div>
                 <div className='quiz-option '>
                     {options.map((quizOption) => (

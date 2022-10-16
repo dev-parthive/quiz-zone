@@ -1,0 +1,11 @@
+.ques-headline{
+    font-size: 32px;
+    color: orange;
+    margin-bottom: 50px;
+}
+.blog-container{
+    margin:30px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 4px solid yellowgreen;
+}
