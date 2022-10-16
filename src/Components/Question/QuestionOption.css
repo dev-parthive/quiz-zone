@@ -17,6 +17,11 @@
     margin:20px;
     padding:20px;
 }
+.option-box:hover{
+    cursor: pointer;
+    background-color: #00000036;
+    color: white;
+}
 
 .icon-fav{
     color:#004e89;

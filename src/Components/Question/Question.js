@@ -14,7 +14,7 @@ const Question = ({ questions }) => {
     // check the correctAnswer  here 
     const checkTheAns = (ans) => {
         if (ans === correctAnswer) {
-            toast('Correct answer✌', {
+            toast('Correct answer', {
                 position: "top-center",
                 autoClose: 1000,
                 hideProgressBar: false,
@@ -23,10 +23,10 @@ const Question = ({ questions }) => {
                 draggable: true,
                 progress: undefined,
                 theme: "dark",
-                });
-          
+            });
+
         } else {
-            toast('Wrong answer🧨', {
+            toast('Wrong answer', {
                 position: "top-center",
                 autoClose: 1000,
                 hideProgressBar: false,
@@ -35,32 +35,32 @@ const Question = ({ questions }) => {
                 draggable: true,
                 progress: undefined,
                 theme: "dark",
-                });
-          
+            });
+
         }
-      };
-      const iconsClicked=()=>{
+    };
+    const iconsClicked = () => {
         toast.success(`correct answer is,${correctAnswer}`);
-      }
+    }
     return (
         <div className='quiz-container'>
             <div className="quiz-heading">
                 <div className='flex items-center justify-around'>
-                <h2>Quiz: {question}  </h2>
-                <p><span className='icon-fav' onClick={ () => iconsClicked()}> <EyeIcon className="h-6 w-6 text-blue-500" /></span></p>
+                    <h2>Quiz: {question}  </h2>
+                    <p><span className='icon-fav' onClick={() => iconsClicked()}> <EyeIcon className="h-6 w-6 text-blue-500" /></span></p>
                 </div>
                 <div className='quiz-option '>
                     {options.map((quizOption) => (
-                        <div className="option-box" >
+                        <div className="option-box" onClick={() => checkTheAns(quizOption)}>
                             {/* <li >{quizOption}</li> */}
                             <li>{quizOption}</li>
                         </div>
                     ))}
-                   
+
                 </div>
             </div>
 
-                        <ToastContainer></ToastContainer>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
