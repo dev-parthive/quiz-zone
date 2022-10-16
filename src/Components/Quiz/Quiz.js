@@ -8,9 +8,9 @@ const Quiz = ({quiz}) => {
         <div className='quiz p-5 rounded shadow-lg  shadow-indigo-500/50'>
             <img src={logo} className='w-11/12 mx-auto' alt="" />
             <h2 className='text-2xl mt-3'>{quiz.name}</h2>
-            <div className='flex justify-between items-center w-11/12 mx-auto mt-2'>
+            <div className='flex md:flex-col  justify-between items-center w-11/12 mx-auto mt-2'>
                 <p>{total} Questions</p>
-                 <button className='btn btn-accent btn-outline'>
+                 <button className='md:mt-3 btn btn-accent btn-outline'>
                     <Link to={`/${id}`}>Start quiz</Link>
                  </button>
                 </div>

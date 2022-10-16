@@ -7,6 +7,20 @@
 .menu-items a{
     margin-right: 20px;
 }
+
 .menu-items a:hover{
     color: orange;
 }
+
+
+
+/* responsive  */
+@media only screen and (max-width: 640px) {
+    /* .navbar{
+        display: flex;
+        flex-direction: column;
+    } */
+    .menu-list{
+        display: none;
+    }
+  }
