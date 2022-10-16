@@ -16,11 +16,14 @@
 
 /* responsive  */
 @media only screen and (max-width: 640px) {
-    /* .navbar{
+    .navbar{
         display: flex;
         flex-direction: column;
-    } */
-    .menu-list{
+    }
+    /* .menu-list{
         display: none;
+    } */
+    .logo{
+        margin-bottom: 50px;
     }
   }
